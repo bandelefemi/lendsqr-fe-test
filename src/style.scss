@@ -1,3 +1,180 @@
 .login {
     font-family: 'Bold';
 }
+
+$generalTransition: 0.5s ease-in-out all;
+
+
+.options {
+    width: 180px;
+    height: 130px;
+    background: '';
+    border: 1px solid rgba(84, 95, 125, 0.04);
+    box-shadow: '';
+    border-radius: 4px;
+    padding: 20px;
+    transform: scale(0);
+    position: absolute;
+    left: -95px;
+    transition: '';
+  
+    &.show {
+      transform: scale(1);
+      z-index: 4;
+    }
+  
+    li {
+      margin: 0.5rem 0;
+      cursor: pointer;
+  
+      span {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .login-main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Avenir Next LT Pro", sans-serif;
+  
+    @media (max-width: 1023px) {
+    }
+    @media (min-width: 1023px) {
+      max-height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .login-bg,
+    .login-form {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      height: 100%;
+  
+      @media (min-width: 1023px) {
+        flex: 1 1 0%;
+      }
+    }
+  
+    .login-bg {
+      padding: 106px 67px;
+      @media (max-width: 1023px) {
+        position: absolute;
+      }
+      div {
+        background: url("../public/pablo.svg") no-repeat 50% 175px;
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+  
+        img {
+          padding: 0 30px;
+        }
+      }
+    }
+  
+    .login-form {
+      box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+      padding: 0 100px;
+      position: relative;
+      @media (max-width: 1023px) {
+        display: flex;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.95);
+        max-width: 400px;
+        min-height: fit-content;
+        width: 90%;
+        height: fit-content;
+        margin: 16px 8px;
+        padding: 48px 16px;
+        border-radius: 8px;
+        box-shadow: 0 3px 14px 3px rgba(0, 0, 0, 0.1);
+        border: 1px solid '';
+      }
+  
+      form {
+        max-width: 447px;
+        width: 100%;
+      }
+  
+      input {
+        @extend input;
+        margin-bottom: 24px;
+      }
+      @media (min-width: 1023px) {
+        padding-top: 24.5vh;
+      }
+  
+      .forgot-wrapper {
+        margin-bottom: 30px;
+      }
+  
+      .forgot-password {
+        width: 147px;
+        height: 17px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: right;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: '';
+      }
+  
+      button.show-password {
+        position: absolute;
+        right: 15px;
+        top: 0;
+        bottom: 24px;
+        width: fit-content;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        border: none;
+        background: none;
+        color: '';
+        cursor: pointer;
+        transition: all 150ms ease-in-out;
+  
+        &:hover {
+          color: '';
+        }
+      }
+  
+      .green-btn {
+        background: '';
+        border-radius: 8px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        border: 2px solid ;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: white;
+        padding: 0.875rem;
+        cursor: pointer;
+        transition: 150ms all ease-in;
+  
+        &:hover {
+          background: '';
+          border: 2px solid ;
+        }
+      }
+  
+      button {
+        font-family: "Avenir Next LT Pro", sans-serif;
+        width: 100%;
+      }
+    }
+  }

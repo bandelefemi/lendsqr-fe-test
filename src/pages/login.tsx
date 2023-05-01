@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 
 const Login = () => {
 
-    const [formData, setFormData] = useState()
+    // const [formData, setFormData] = useState()
+
+    const [showPassword, setshowPassword] = useState<Boolean>(true);
 
     const handleChange=()=> {
         
@@ -41,9 +43,9 @@ const Login = () => {
                         <div className=' border relative rounded-md p-2'>
                             <input 
                                 placeholder='Password' 
-                                type='password'
+                                type={showPassword? 'text': 'password'}
                                 className='pl-2 focus:outline-none placeholder:text-sm' />
-                            <span 
+                            <span onClick={()=> setshowPassword(!showPassword)}
                                 className=' absolute cursor-pointer top-3 font-bold right-4 text-[#39cdcc] text-xs' >
                                     SHOW
                             </span>
@@ -53,7 +55,7 @@ const Login = () => {
                         <Link to={'/dashboard'} className='bg-[#39cdcc] text-sm text-white p-2 rounded-md ' >
                             <button 
                                 type='submit'
-                                className=' ' >LOG IN
+                                className=' flex justify-center w-full'  >LOG IN
                             </button>
                         </Link>
                         

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ContextProvider } from './contexts/ContextProvider';
 import './index.css';
+import './style.scss'
 import App from './App';
 import './fonts/AvenirLTStd-Black.otf'
 import { registerLicense } from '@syncfusion/ej2-base';

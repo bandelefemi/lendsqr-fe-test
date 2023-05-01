@@ -1,17 +1,17 @@
-import { IoMdHome } from 'react-icons/io'
-import {HiOutlineRefresh, HiUsers} from 'react-icons/hi'
+// import { IoMdHome } from 'react-icons/io'
+import { HiUsers} from 'react-icons/hi'
 import {FaCoins, FaUserCog, FaUsers} from 'react-icons/fa'
 import {GiBank, GiCash} from 'react-icons/gi'
 import { FaHandshake } from 'react-icons/fa'
-import { MdOutlineSupervisorAccount, MdSavings, MdSendToMobile, MdWork } from 'react-icons/md'
+import {  MdSavings, MdSendToMobile, MdWork } from 'react-icons/md'
 import { GiReceiveMoney } from 'react-icons/gi'
-import { FiBarChart, FiUserCheck } from 'react-icons/fi'
+import {  FiUserCheck } from 'react-icons/fi'
 import { GrFan } from 'react-icons/gr'
 import { AiOutlineBarChart } from 'react-icons/ai'
 import { VscSettings } from 'react-icons/vsc'
 import { CiPercent } from 'react-icons/ci'
 import { TbReport } from 'react-icons/tb'
-import { BsBoxSeam } from 'react-icons/bs'
+
 
 
 export const navLinks = [

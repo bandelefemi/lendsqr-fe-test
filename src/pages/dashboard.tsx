@@ -1,18 +1,15 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {  Routes, Route } from 'react-router-dom';
 
 // import { FiSettings } from 'react-icons/fi'
 
-import { Users, Guarantors, Loans, DecisionModels, Savings, LoanRequest, Whitelist, Karma,
-  Organization, LoanProducts, SavingsProducts, FeesAndCharges, Transactions, 
-  Services, ServiceAccount, Settlements, Reports, Preferences, FeesAndPricing, 
-  AuditLogs, 
+import { Users, Guarantors, Loans, DecisionModels, Savings, LoanRequest,
   UserProfile} from '../components'
 import Navbar from '../components/Navbar';
 import { useStateContext } from '../contexts/ContextProvider';
-import Login from './login';
-import Main from '../components/Main';
+// import Login from './login';
+// import Main from '../components/Main';
 
 const Dashboard = () => {
 
@@ -24,10 +21,10 @@ const Dashboard = () => {
         <div className='flex relative dark:bg-main-dark-bg'>
             
             {activeMenu? 
-            (<div className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white'>
+            (<div className='w-72 z-50 fixed sidebar dark:bg-secondary-dark-bg bg-white'>
               <Sidebar/>
             </div> )
-            : (<div className='w-0 dark:bg-secondary-bg'>
+            : (<div className='w-0 dark:bg-secondary-bg z-50'>
                 <Sidebar />
               </div>  ) }
 
@@ -36,7 +33,7 @@ const Dashboard = () => {
                 <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
                   <Navbar />
                 </div>
-                <div>
+                <div className=''>
                   {/* {themeSettings && <ThemeSettings /> } */}
 
                   <Routes>

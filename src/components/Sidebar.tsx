@@ -23,7 +23,7 @@ const Sidebar = () => {
   const normalLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5  text-[#213f7d]/60 dark:hover:text-black hover:bg-light-gray dark:text-gray-200 text-md m-2'
 
   return (
-    <div className='ml-3 shadow-lg h-screen md:overflow-hidden overflow-auto 
+    <div className='ml-3 z-100 shadow-lg h-screen md:overflow-hidden overflow-auto 
     md:hover:overflow-auto pb-10 '>
       {activeMenu && (<>
       <div className='flex justify-between items-center'>

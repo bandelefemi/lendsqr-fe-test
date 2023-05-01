@@ -25,6 +25,9 @@ module.exports = {
       borderColor: {
         color: 'rgba(0, 0, 0, 0.1)',
       },
+      backgroundImage: theme => ({
+        'hero-pattern': "url('../public/pablo.svg')"
+      }),
       
       width: {
         400: '400px',
