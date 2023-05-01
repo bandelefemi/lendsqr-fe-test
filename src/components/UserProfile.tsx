@@ -1,8 +1,4 @@
 import React, { useState, useEffect, useCallback } from "react";
-// import backArrow from "../images/back-arrow.svg";
-// import ratedStar from "../images/rated-star.svg";
-// import unratedStar from "../images/unrated-star.svg";
-// import { useGlobalContext } from "./Context";
 import { Link, useParams } from "react-router-dom";
 import Loader from "./Loader";
 
@@ -100,7 +96,7 @@ const UserProfile = () => {
 
       {/* SECTION CONTAINING THE BASIC DETAILS ABOUT THE CUSTOMER */}
       <div className=' flex flex-col bg-white shadow-md px-8 pt-8 mt-8 rounded-md'>
-        <div className='flex items-center '>
+        <div className='flex items-center w-4/6 justify-between '>
           <div className=' w-24'>
             <img src={avatar} alt='user' className="rounded-full" />
           </div>

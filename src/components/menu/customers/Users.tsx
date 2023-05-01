@@ -3,11 +3,14 @@ import { earningData } from '../../data'
 import axios from 'axios'
 import Table from '../../Table'
 import moment from 'moment'
+import Loader from '../../Loader'
 
 const Users = () => {
 
 
   const [userData, setUserData] = useState([])
+  const [loading, setLoading] = useState(true);
+
 
   const columns = [
     { lendsqr: 'orgName', label: 'ORAGNIZATION' },
@@ -20,12 +23,15 @@ const Users = () => {
   ]
 
   useEffect(()=> {
+    setLoading(true);
     fetch('https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users').then(res => {
       return res.json()
     })
     .then((data) => createObjArray(data))
     .then((objectArray)=> {
       setUserData(objectArray)
+      setLoading(false);
+
     })
 
   }, [])
@@ -40,6 +46,12 @@ const Users = () => {
         }
       })
     )
+  }
+
+  if (loading) {
+    return <div className="flex w-full items-center justify-center h-screen">
+      <Loader />
+    </div> ;
   }
 
   // console.log(userData)

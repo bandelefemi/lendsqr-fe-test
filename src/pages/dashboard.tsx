@@ -41,7 +41,7 @@ const Dashboard = () => {
 
                   <Routes>
                     {/* dashboard */}
-                    <Route path='/' element={<Main />} />
+                    <Route path='/' element={<Users />} />
                     {/* <Route path='/main' element={<Main/>} /> */}
 
 
