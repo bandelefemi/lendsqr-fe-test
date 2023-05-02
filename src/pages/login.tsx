@@ -23,7 +23,7 @@ const Login = () => {
                     </div>
                 </div>
             </section>
-            <section className='w-full relative lg:static bg-white px-6 sm:px-16 lg:px-24 xl:px-36 py-24 lg:w-1/2 flex flex-col items-center'>
+            <section className='w-full relative lg:static bg-white px-4 sm:px-16 lg:px-24 xl:px-36 py-24 lg:w-1/2 flex flex-col items-center'>
                 <div className=' lg:hidden absolute opacity-5 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-0  '>
                     <img src='pablo.svg' alt='' />
                 </div>
