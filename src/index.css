@@ -22,7 +22,14 @@ h5 {
 }
 
 
+h5 {
+  font-weight: 400;
+}
 
+
+.user-details>div>p{
+  @apply text-lg
+}
 
 
 .options {

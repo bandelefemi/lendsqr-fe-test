@@ -5,7 +5,7 @@ const Login = () => {
 
     // const [formData, setFormData] = useState()
 
-    const [showPassword, setshowPassword] = useState<Boolean>(true);
+    const [showPassword, setshowPassword] = useState<Boolean>(false);
 
     const handleChange=()=> {
         
@@ -24,13 +24,13 @@ const Login = () => {
                 </div>
             </section>
             <section className='w-full relative lg:static bg-white px-16 lg:px-24 xl:px-36 py-24 lg:w-1/2 flex flex-col items-center'>
-                <div className=' lg:hidden absolute opacity-10 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]  '>
+                <div className=' lg:hidden absolute opacity-5 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-0  '>
                     <img src='pablo.svg' alt='' />
                 </div>
                 <div className=' lg:hidden'>
                     <img src='Group.svg' alt='' />
                 </div>
-                <div className=' h-full w-2/3 md:w-3/5 lg:w-full flex flex-col mt-8 '>
+                <div className=' h-full w-2/3 md:w-3/5 lg:w-full flex flex-col mt-8 z-10 '>
                     <div className=' pt-10'>
                         <p className='text-3xl font-bold text-[#213f7d]'>Welcome!</p>
                         <p className='mt-2 font-light text-[#213f7d]'>Enter details to login</p>
@@ -53,7 +53,7 @@ const Login = () => {
                                 className='pl-2 focus:outline-none placeholder:text-sm' />
                             <span onClick={()=> setshowPassword(!showPassword)}
                                 className=' absolute cursor-pointer top-3 font-bold right-4 text-[#39cdcc] text-xs' >
-                                    SHOW
+                                    {showPassword? 'HIDE': 'SHOW'}
                             </span>
                         </div>
                         <p className='text-[#39cdcc] text-xs'>FORGOT PASSWORD?</p>
