@@ -10,7 +10,7 @@ This is a project framework for Lendsqr.
 
 ### Link
 
-- Demo Site URL: [Website Link](https://bandele-femi-lendsqr-fe-test-57mikdsyz-bandelefemi.vercel.app)
+- Demo Site URL: [Website Link](https://bandele-femi-lendsqr-fe-test.vercel.app/)
 
 
 ### Built with
