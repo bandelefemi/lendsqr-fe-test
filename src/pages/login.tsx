@@ -13,7 +13,7 @@ const Login = () => {
   return (
     <main className=''>
         <div className='flex'>
-            <section className=' bg-gray-50 w-1/2 h-screen p-20'>
+            <section className='hidden lg:flex bg-gray-50 w-1/2 h-screen p-20'>
                 <div className=' flex flex-col h-full'>
                     <div>
                         <img src='Group.svg' alt='' />
@@ -23,8 +23,14 @@ const Login = () => {
                     </div>
                 </div>
             </section>
-            <section className=' bg-white px-16 lg:px-24 xl:px-36 py-24 w-1/2'>
-                <div className=' h-full '>
+            <section className='w-full relative lg:static bg-white px-16 lg:px-24 xl:px-36 py-24 lg:w-1/2 flex flex-col items-center'>
+                <div className=' lg:hidden absolute opacity-10 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]  '>
+                    <img src='pablo.svg' alt='' />
+                </div>
+                <div className=' lg:hidden'>
+                    <img src='Group.svg' alt='' />
+                </div>
+                <div className=' h-full w-2/3 md:w-3/5 lg:w-full flex flex-col mt-8 '>
                     <div className=' pt-10'>
                         <p className='text-3xl font-bold text-[#213f7d]'>Welcome!</p>
                         <p className='mt-2 font-light text-[#213f7d]'>Enter details to login</p>

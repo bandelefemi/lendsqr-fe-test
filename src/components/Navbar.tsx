@@ -52,9 +52,9 @@ const Navbar = () => {
       customFunc={()=> setActiveMenu(!activeMenu)} 
       color={'#213f7d'} icon={<AiOutlineMenu/>}/>
 
-      <div className='hidden lg:flex rounded-lg'>
+      <div className='hidden lg:flex rounded-lg '>
         <input placeholder='search for anything' type='text' className=' font-light pl-4 pr-8 border border-r-0 rounded-l-lg focus:outline-none' />
-        <div className='px-5 text-xl rounded-r-lg flex items-center justify-center bg-[#39cdcc] text-white'>
+        <div className='px-5 text-xl cursor-pointer rounded-r-lg flex items-center justify-center bg-[#39cdcc] text-white'>
           <BiSearch />
         </div>
       </div>
