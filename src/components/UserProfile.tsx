@@ -86,16 +86,16 @@ const UserProfile = () => {
       </Link>
 
       <div className=' mt-4 flex justify-between items-center'>
-        <h2 className=' text-lg font-semibold text-[#213f7d]'>User Details</h2>
+        <h2 className=' text-sm sm:text-lg font-semibold text-[#213f7d]'>User Details</h2>
         <div className=' flex gap-4'>
-          <button className=' border border-[#e4033b] px-3 py-1 rounded-lg text-[#e4033b] font-semibold'>Blacklist User</button>
-          <button className='border border-[#39cdcc] px-3 py-1 rounded-lg text-[#39cdcc] font-semibold'>Activate User</button>
+          <button className=' border border-[#e4033b] px-1 py-1 sm:px-3 text-xs sm:text-base rounded-lg text-[#e4033b] font-semibold'>Blacklist User</button>
+          <button className='border border-[#39cdcc] px-1 py-1 sm:px-3 text-xs sm:text-base rounded-lg text-[#39cdcc] font-semibold'>Activate User</button>
         </div>
       </div>
 
       {/* SECTION CONTAINING THE BASIC DETAILS ABOUT THE CUSTOMER */}
       <div className=' flex flex-col bg-white shadow-md px-8 pt-8 mt-8 rounded-md'>
-        <div className='flex items-center w-4/6 justify-between mb-8 md:mb-0 '>
+        <div className='flex flex-col gap-5 w-full sm:flex-row items-center sm:w-4/6 justify-between mb-8 md:mb-0 '>
           <div className=' w-24'>
             <img src={avatar} alt='user' className="rounded-full" />
           </div>
@@ -103,7 +103,7 @@ const UserProfile = () => {
             <h3 className=" font-semibold text-[#213f7d]">{`${firstName} ${lastName}`}</h3>
             <p className=" text-xs mt-2 text-[#545f7d]">{accountNumber}</p>
           </div>
-          <div className=' border-x py-2 px-3'>
+          <div className=' sm:border-x sm:border-y-0 border-y  py-2 px-3'>
             <h3 className=" text-xs text-[#545f7d]">User's Tier</h3>
             <div className=' flex mt-2'>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
